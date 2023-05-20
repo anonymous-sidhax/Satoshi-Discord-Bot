@@ -1,1 +1,1 @@
-# Satoshi-Discord_Bot
+# Satoshi-Discord-Bot
