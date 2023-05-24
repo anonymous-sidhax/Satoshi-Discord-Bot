@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import json
+import os
 
 PREFIX = '.'
 CONFIG_FILE = 'bot_config/config.json'
@@ -19,5 +20,7 @@ async def ping(ctx):
     print('pong')
     await ctx.send(f"Pong! :ping_pong: `{round(bot.latency * 1000, 2)} ms`")
 
-bot.run(config['TOKEN'])
+token = os.environ['DISCORD_BOT_SECRET']
+
+bot.run(token])
         
