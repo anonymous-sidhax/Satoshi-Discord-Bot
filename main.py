@@ -26,6 +26,6 @@ async def ping(ctx):
   await ctx.send(f"Pong! :ping_pong: `{round(bot.latency * 1000, 2)} ms`")
 
 
-token = os.environ['DISCORD_BOT_SECRET']
+token = os.environ['TOKEN']
 keep_alive()
 bot.run(token)
