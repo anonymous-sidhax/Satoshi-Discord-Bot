@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 import json
 import os
+import keep_alive
 
 PREFIX = '.'
 CONFIG_FILE = 'bot_config/config.json'
@@ -26,5 +27,5 @@ async def ping(ctx):
 
 
 token = os.environ['DISCORD_BOT_SECRET']
-
+keep_alive()
 bot.run(token)
